@@ -26,7 +26,13 @@ export const useStyles = makeStyles((theme)=> ({
         width:"100%",
         height:"absolute",
     },
-
+    responseimage:{
+        width:"100%",
+        height:"absolute",
+        animationName:"pulse",
+        animationDuration:"2s",
+        animationIterationCount:"infinite",
+    },
     shc:{
         padding:theme.spacing(1),
         color: Theme.colors.base1,

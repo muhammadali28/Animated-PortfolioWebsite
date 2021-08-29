@@ -12,12 +12,14 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
-
+import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default function Contact() {
 
     const classes= useStyles();
+
+    const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
 
     const CardMediaData = [
         {
@@ -109,9 +111,9 @@ export default function Contact() {
                          ))}
                     </Grid>
                 </Grid>
-                <Grid item sm={5} >
+                <Grid item sm={5} ref={ref}>
                     <Box component={Hidden} xsDown >
-                    <img src={imageabout}  alt="contact" className={classes.responsiveimage}/>
+                    <img src={imageabout}  alt="contact" className={classes.responseimage} />
                     </Box>
                 </Grid>
 

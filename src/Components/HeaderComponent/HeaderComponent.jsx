@@ -8,6 +8,7 @@ import DrawerComponent from './DrawerComponent';
 import Typed from 'react-typed';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+
 export default function HeaderComponent() {
 
     const classes = useStyles();

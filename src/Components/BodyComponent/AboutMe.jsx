@@ -10,11 +10,14 @@ import CreateIcon from '@material-ui/icons/Create';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
+import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
 
 export default function AboutUs() {
 
     const classes= useStyles();
     
+    const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
+
     const saveFile = () => {
         FileSaver.saveAs(
           process.env.REACT_APP_CLIENT_URL + "../../resources/MAliCV.pdf",
@@ -50,9 +53,9 @@ export default function AboutUs() {
             <ScrollAnimation animateIn="fadeIn">
             <Container>
             <Grid container spacing={5} >
-                <Grid item sm={5} >
+                <Grid ref={ref} duration="infinity" item sm={5} >
                     <Box component={Hidden} xsDown>
-                    <img src={imageabout} alt="about me" className={classes.responsiveimage}/>
+                    <img src={imageabout} alt="about me" className={classes.responseimage} />
                     </Box>
                 </Grid>
                 <Grid item xs={12} sm={7}>
