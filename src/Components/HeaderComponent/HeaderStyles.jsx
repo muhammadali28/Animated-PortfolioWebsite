@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme)=>({
     HeaderWrapper:{
         width: '100%' ,
         minHeight: '110vh',
-        height: '100%',
+        height: 'auto',
         backgroundImage:`url(${image1})` ,
         backgroundSize:"cover",
         backgroundRepeat:"no-repeat",    
@@ -25,13 +25,18 @@ export const useStyles = makeStyles((theme)=>({
     },
     headerTitle:{
         fontSize: "3rem",
+        fontWeight:"bolder",
         margin: theme.spacing(1,0),
         [theme.breakpoints.down("xs")]:{
             fontSize: "2rem",
         },
     },
+    heading:{
+        fontWeight:"bolder",
+    },
     headerDesc:{
         fontSize: "2rem",
+        fontWeight:"bold",
         margin: theme.spacing(1,0),
         [theme.breakpoints.down("xs")]:{
             fontSize: "1.5rem",
@@ -39,8 +44,14 @@ export const useStyles = makeStyles((theme)=>({
 
     },
     Navbar:{
-        backgroundColor: Theme.colors.primary,
+        backgroundColor: "transparent",
         color: Theme.colors.base2,
+        position:"fixed",
+    },
+    Navbaractive:{
+        backgroundColor: Theme.colors.base1,
+        color: Theme.colors.base2,
+        position:"fixed",
     },
     Toolbar:{
         display:"flex",
@@ -92,5 +103,17 @@ export const useStyles = makeStyles((theme)=>({
             paddingTop:"10px", 
           },
         },
+    },
+    drawer:{
+        width:"250px",
+        height:"100vh",
+    },
+    drawerContainer:{    
+        width:"250px",
+        height:"100vh",
+        backgroundColor:Theme.colors.primary,
+    },
+    list:{
+        color:Theme.colors.base2,
     },
 }));
