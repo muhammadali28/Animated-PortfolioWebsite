@@ -19,11 +19,11 @@ export default function AboutUs() {
     
     const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
 
-    const saveFile = () => {
-        FileSaver.saveAs(
-           {MyPDF},
-          "MAliCV.pdf"
-        )};
+//     const saveFile = () => {
+//         FileSaver.saveAs(
+//            {MyPDF},
+//           "MAliCV.pdf"
+//         )};
 
     const CardMediaData = [
         {
