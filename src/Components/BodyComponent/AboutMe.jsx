@@ -11,6 +11,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
 import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
+import MyPDF from '../../resources/MAliCV.pdf';
 
 export default function AboutUs() {
 
@@ -20,7 +21,7 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          ../../resources/MAliCV.pdf,
+           {MyPDF},
           "MAliCV.pdf"
         )};
 
