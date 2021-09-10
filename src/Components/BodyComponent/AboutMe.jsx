@@ -21,7 +21,7 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',,
+          process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',
           "MAliCV.pdf"
         )};
 
