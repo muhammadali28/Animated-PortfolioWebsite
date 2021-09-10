@@ -19,11 +19,11 @@ export default function AboutUs() {
     
     const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
 
-    const saveFile = () => {
-        FileSaver.saveAs(
-          process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',
-          "MAliCV.pdf"
-        )};
+//     const saveFile = () => {
+//         FileSaver.saveAs(
+//           process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',
+//           "MAliCV.pdf"
+//         )};
 
     const CardMediaData = [
         {
@@ -83,8 +83,8 @@ export default function AboutUs() {
                     variant="contained"
                      className={classes.button}
                       endIcon={<GetAppIcon />}
-                      onClick={saveFile}
-                    >
+                      href="/resume/MAliCV.pdf" 
+                    download>
                         Download CV
                     </Button>
                     
