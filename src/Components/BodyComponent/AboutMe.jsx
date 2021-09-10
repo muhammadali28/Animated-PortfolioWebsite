@@ -20,7 +20,7 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          process.env.REACT_APP_CLIENT_URL + "/resources/MAliCV.pdf",
+          "http://muhammadaliportfolio.surge.sh/resources/MAliCV.pdf",
           "MuhammadAli CV.pdf"
         )};
 
