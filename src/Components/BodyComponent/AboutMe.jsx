@@ -11,7 +11,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
 import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
-import pdf from "../../resources/MAliCV.pdf";
+import pdf from "../../resources/abc.docx";
 
 export default function AboutUs() {
 
