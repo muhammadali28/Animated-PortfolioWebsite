@@ -11,7 +11,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
 import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
-import myPDF from '../../resources/MAliCV.pdf';
+
 
 export default function AboutUs() {
 
@@ -19,11 +19,11 @@ export default function AboutUs() {
     
     const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
 
-//     const saveFile = () => {
-//         FileSaver.saveAs(
-//            {MyPDF},
-//           "MAliCV.pdf"
-//         )};
+    const saveFile = () => {
+        FileSaver.saveAs(
+          process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',,
+          "MAliCV.pdf"
+        )};
 
     const CardMediaData = [
         {
@@ -83,7 +83,7 @@ export default function AboutUs() {
                     variant="contained"
                      className={classes.button}
                       endIcon={<GetAppIcon />}
-                      href={myPDF}
+                      onClick={saveFile}
                     >
                         Download CV
                     </Button>
