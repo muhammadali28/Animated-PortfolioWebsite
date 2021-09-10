@@ -20,7 +20,7 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          "../../resources/MAliCV.pdf",
+          ../../resources/MAliCV.pdf,
           "MAliCV.pdf"
         )};
 
