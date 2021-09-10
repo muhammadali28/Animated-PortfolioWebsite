@@ -20,7 +20,7 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          "http://muhammadaliportfolio.surge.sh/src/resources/MAliCV.pdf",
+          "http://people.cs.ucsb.edu/ebelding/sites/people/ebelding/files/publications/wpmc02.pdf",
           "MAliCV.pdf"
         )};
 
