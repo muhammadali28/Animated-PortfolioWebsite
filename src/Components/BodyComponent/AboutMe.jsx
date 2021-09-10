@@ -11,7 +11,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
 import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
-import MyPDF from '../../resources/MAliCV.pdf';
+import myPDF from '../../resources/MAliCV.pdf';
 
 export default function AboutUs() {
 
@@ -83,7 +83,7 @@ export default function AboutUs() {
                     variant="contained"
                      className={classes.button}
                       endIcon={<GetAppIcon />}
-                      onClick={saveFile}
+                      href={myPDF}
                     >
                         Download CV
                     </Button>
