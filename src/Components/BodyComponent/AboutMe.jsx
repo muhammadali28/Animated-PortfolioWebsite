@@ -79,14 +79,15 @@ export default function AboutUs() {
                          ))}
                     </Grid>
                     
-                    <Button
-                    variant="contained"
-                     className={classes.button}
-                      endIcon={<GetAppIcon />}
-                      href="/resume/MAliCV.pdf" 
-                    download>
-                        Download CV
-                    </Button>
+//                     <Button
+//                     variant="contained"
+//                      className={classes.button}
+//                       endIcon={<GetAppIcon />}
+//                       href="/resume/MAliCV.pdf" 
+//                     download>
+//                         Download CV
+//                     </Button>
+                    <a className={classes.button} href="/resume/MAliCV.pdf" download><strong>Download my Resume!</strong></a>
                     
                 </Grid>
             </Grid>
