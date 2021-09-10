@@ -87,7 +87,7 @@ export default function AboutUs() {
 //                     download>
 //                         Download CV
 //                     </Button>
-                    <a className={classes.button} href="/resume/MAliCV.pdf" download><strong>Download my Resume!</strong></a>
+{<a className={classes.button} href="/resume/MAliCV.pdf" download><strong>Download my Resume!</strong></a>}
                     
                 </Grid>
             </Grid>
