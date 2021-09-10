@@ -20,8 +20,8 @@ export default function AboutUs() {
 
     const saveFile = () => {
         FileSaver.saveAs(
-          "http://muhammadaliportfolio.surge.sh/resources/MAliCV.pdf",
-          "MuhammadAli CV.pdf"
+          "http://muhammadaliportfolio.surge.sh/src/resources/MAliCV.pdf",
+          "MAliCV.pdf"
         )};
 
     const CardMediaData = [
