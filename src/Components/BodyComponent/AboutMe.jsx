@@ -18,7 +18,7 @@ export default function AboutUs() {
     const classes= useStyles();
     
     const { ref, playState ,getAnimation } = useWebAnimations({...pulse});
-
+    console.log(process.env.PUBLIC_URL);
 //     const saveFile = () => {
 //         FileSaver.saveAs(
 //           process.env.PUBLIC_URL + '../../resources/MAliCV.pdf',
