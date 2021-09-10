@@ -11,7 +11,7 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScrollAnimation from 'react-animate-on-scroll';
 import FileSaver from 'file-saver';
 import useWebAnimations,{pulse} from '@wellyshen/use-web-animations';
-
+import pdf from "../../resources/MAliCV.pdf";
 
 export default function AboutUs() {
 
@@ -79,15 +79,14 @@ export default function AboutUs() {
                          ))}
                     </Grid>
                     
-//                     <Button
-//                     variant="contained"
-//                      className={classes.button}
-//                       endIcon={<GetAppIcon />}
-//                       href="/resume/MAliCV.pdf" 
-//                     download>
-//                         Download CV
-//                     </Button>
-{<a className={classes.button} href="/resume/MAliCV.pdf" download><strong>Download my Resume!</strong></a>}
+                    <Button
+                    variant="contained"
+                     className={classes.button}
+                      endIcon={<GetAppIcon />}
+                      href={pdf} target="_blank">
+                        Download CV
+                    </Button>
+
                     
                 </Grid>
             </Grid>
