@@ -91,8 +91,8 @@ export default function AboutUs() {
 
                         </Grid>
                     </Grid>
-                </Container>
-            </ScrollAnimation>
-        </Box>
+                </Container >
+            </ScrollAnimation >
+        </Box >
     );
 }
