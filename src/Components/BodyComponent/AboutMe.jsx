@@ -28,7 +28,7 @@ export default function AboutUs() {
         },
         {
             title: "Wordpress Development",
-            description: "I ahve expertise in making wordpress websites",
+            description: "I have expertise in making wordpress websites",
             icon: <ViewCompactIcon />,
         },
         {
@@ -37,8 +37,8 @@ export default function AboutUs() {
             icon: <AssessmentIcon />,
         },
         {
-            title: "Logo Design",
-            description: "I have created many projects in logo design",
+            title: "Frontend Developer",
+            description: "I have created projects in Frontend Development and also learning Jamstack",
             icon: <CreateIcon />,
         },
     ]
