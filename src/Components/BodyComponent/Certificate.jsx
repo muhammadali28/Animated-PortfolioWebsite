@@ -16,7 +16,7 @@ export default function Certificate() {
     const certificateimage = [
         {
             url: image1,
-            title: "Cerificate #1",
+            title: "Cerificate #11",
         },
         {
             url: image3,
