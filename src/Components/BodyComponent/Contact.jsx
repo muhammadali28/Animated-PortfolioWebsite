@@ -61,10 +61,6 @@ export default function Contact() {
             icon:<TwitterIcon/>,
             link:"https://twitter.com/Muhamma47173416",
         },
-        {
-            icon:<InstagramIcon/>,
-            link:"https://www.instagram.com/m_ali2820/",
-        },
     ]
 
 
