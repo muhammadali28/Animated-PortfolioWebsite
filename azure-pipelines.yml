@@ -7,7 +7,16 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Ali-Agent
+  # demands:
+  # - npm
+  # - node.js
+
+  # agent:
+  #   name: myagent
+  #   machine: mymachine
+# pool:
+#   vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
